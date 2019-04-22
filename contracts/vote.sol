@@ -7,6 +7,9 @@ contract vote {
         string name;
         uint voteCount;
     }
+
+    mapping(uint => Candidate) public candidates;
+    
     constructor() public {
         owner = msg.sender;
     }
